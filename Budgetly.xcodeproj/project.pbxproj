@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		25D02D982E5F908F003F2E42 /* BudgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02D972E5F908F003F2E42 /* BudgetModel.swift */; };
+		25D02D9B2E5F924E003F2E42 /* BudgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02D9A2E5F924E003F2E42 /* BudgetListView.swift */; };
+		25D02D9D2E5F92D4003F2E42 /* ActualsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02D9C2E5F92D4003F2E42 /* ActualsListView.swift */; };
+		25D02D9F2E5F9366003F2E42 /* TotalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02D9E2E5F9366003F2E42 /* TotalListView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		25D02D862E5F9031003F2E42 /* Budgetly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budgetly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D02D972E5F908F003F2E42 /* BudgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetModel.swift; sourceTree = "<group>"; };
+		25D02D9A2E5F924E003F2E42 /* BudgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListView.swift; sourceTree = "<group>"; };
+		25D02D9C2E5F92D4003F2E42 /* ActualsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualsListView.swift; sourceTree = "<group>"; };
+		25D02D9E2E5F9366003F2E42 /* TotalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +43,8 @@
 		25D02D7D2E5F9031003F2E42 = {
 			isa = PBXGroup;
 			children = (
+				25D02D962E5F907B003F2E42 /* Model */,
+				25D02D992E5F9234003F2E42 /* Views */,
 				25D02D882E5F9031003F2E42 /* Budgetly */,
 				25D02D872E5F9031003F2E42 /* Products */,
 			);
@@ -43,6 +56,24 @@
 				25D02D862E5F9031003F2E42 /* Budgetly.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		25D02D962E5F907B003F2E42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25D02D972E5F908F003F2E42 /* BudgetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25D02D992E5F9234003F2E42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25D02D9A2E5F924E003F2E42 /* BudgetListView.swift */,
+				25D02D9C2E5F92D4003F2E42 /* ActualsListView.swift */,
+				25D02D9E2E5F9366003F2E42 /* TotalListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D02D982E5F908F003F2E42 /* BudgetModel.swift in Sources */,
+				25D02D9D2E5F92D4003F2E42 /* ActualsListView.swift in Sources */,
+				25D02D9B2E5F924E003F2E42 /* BudgetListView.swift in Sources */,
+				25D02D9F2E5F9366003F2E42 /* TotalListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
