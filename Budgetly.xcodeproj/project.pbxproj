@@ -11,6 +11,10 @@
 		25D02D9B2E5F924E003F2E42 /* BudgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02D9A2E5F924E003F2E42 /* BudgetListView.swift */; };
 		25D02D9D2E5F92D4003F2E42 /* ActualsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02D9C2E5F92D4003F2E42 /* ActualsListView.swift */; };
 		25D02D9F2E5F9366003F2E42 /* TotalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02D9E2E5F9366003F2E42 /* TotalListView.swift */; };
+		25D02DA12E5FAD59003F2E42 /* BackEndSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D02DA02E5FAD59003F2E42 /* BackEndSetUp.swift */; };
+		25D02DA42E5FB145003F2E42 /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = 25D02DA32E5FB145003F2E42 /* Vapor */; };
+		25D02DA62E5FB145003F2E42 /* VaporTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 25D02DA52E5FB145003F2E42 /* VaporTesting */; };
+		25D02DA82E5FB145003F2E42 /* XCTVapor in Frameworks */ = {isa = PBXBuildFile; productRef = 25D02DA72E5FB145003F2E42 /* XCTVapor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,7 @@
 		25D02D9A2E5F924E003F2E42 /* BudgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListView.swift; sourceTree = "<group>"; };
 		25D02D9C2E5F92D4003F2E42 /* ActualsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualsListView.swift; sourceTree = "<group>"; };
 		25D02D9E2E5F9366003F2E42 /* TotalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalListView.swift; sourceTree = "<group>"; };
+		25D02DA02E5FAD59003F2E42 /* BackEndSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackEndSetUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D02DA62E5FB145003F2E42 /* VaporTesting in Frameworks */,
+				25D02DA42E5FB145003F2E42 /* Vapor in Frameworks */,
+				25D02DA82E5FB145003F2E42 /* XCTVapor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				25D02D972E5F908F003F2E42 /* BudgetModel.swift */,
+				25D02DA02E5FAD59003F2E42 /* BackEndSetUp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +105,9 @@
 			);
 			name = Budgetly;
 			packageProductDependencies = (
+				25D02DA32E5FB145003F2E42 /* Vapor */,
+				25D02DA52E5FB145003F2E42 /* VaporTesting */,
+				25D02DA72E5FB145003F2E42 /* XCTVapor */,
 			);
 			productName = Budgetly;
 			productReference = 25D02D862E5F9031003F2E42 /* Budgetly.app */;
@@ -125,6 +137,9 @@
 			);
 			mainGroup = 25D02D7D2E5F9031003F2E42;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				25D02DA22E5FB145003F2E42 /* XCRemoteSwiftPackageReference "vapor" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 25D02D872E5F9031003F2E42 /* Products */;
 			projectDirPath = "";
@@ -153,6 +168,7 @@
 				25D02D982E5F908F003F2E42 /* BudgetModel.swift in Sources */,
 				25D02D9D2E5F92D4003F2E42 /* ActualsListView.swift in Sources */,
 				25D02D9B2E5F924E003F2E42 /* BudgetListView.swift in Sources */,
+				25D02DA12E5FAD59003F2E42 /* BackEndSetUp.swift in Sources */,
 				25D02D9F2E5F9366003F2E42 /* TotalListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +375,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25D02DA22E5FB145003F2E42 /* XCRemoteSwiftPackageReference "vapor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/vapor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.115.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25D02DA32E5FB145003F2E42 /* Vapor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25D02DA22E5FB145003F2E42 /* XCRemoteSwiftPackageReference "vapor" */;
+			productName = Vapor;
+		};
+		25D02DA52E5FB145003F2E42 /* VaporTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25D02DA22E5FB145003F2E42 /* XCRemoteSwiftPackageReference "vapor" */;
+			productName = VaporTesting;
+		};
+		25D02DA72E5FB145003F2E42 /* XCTVapor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25D02DA22E5FB145003F2E42 /* XCRemoteSwiftPackageReference "vapor" */;
+			productName = XCTVapor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25D02D7E2E5F9031003F2E42 /* Project object */;
 }

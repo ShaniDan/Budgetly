@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: Data from plaid API (actual credit card) need to be displayed here
+// MARK: Data from plaid API (actual credit or debit card) need to be displayed here
 
 struct ActualsListView: View {
     var body: some View {

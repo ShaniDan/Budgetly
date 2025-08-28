@@ -8,6 +8,10 @@
 import SwiftUI
 
 // MARK: Forecasted Amounts (Budgeted Amounts)
+/* Simple View
+ - 
+ 
+ */
 
 struct BudgetListView: View {
     var body: some View {

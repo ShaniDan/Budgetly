@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: Totals (Budget and Actuals combined) with graphs and charts and suggestions
+// MARK: Totals (Budget and Actuals combined) with graphs and charts and suggestions (maybe from AI budget buddy)
 
 
 struct TotalListView: View {
