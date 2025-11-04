@@ -30,3 +30,5 @@ Notes & gotchas
 	•	Tap-to-Add via NFC only appears for participating issuers; otherwise you’ll see camera/manual entry.
 	•	Each device gets a different token; removing the card wipes the token from that device’s Secure Element.
 	•	None of the sensitive payment keys are accessible to apps or iOS; they live and operate inside the SE.
+
+	https://www.youtube.com/watch?v=u-88z8He1Ek
